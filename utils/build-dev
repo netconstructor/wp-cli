@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 ln -s $(pwd)/src/bin/wp /usr/bin/wp
+test -d /etc/bash_completion.d || mkdir /etc/bash_completion.d
 ln -s $(pwd)/utils/wp-completion.bash /etc/bash_completion.d/wp
